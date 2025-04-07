@@ -46,8 +46,8 @@
 					<img
 						id="logo"
 						crossorigin="anonymous"
-						src="{WEBUI_BASE_URL}/static/favicon.png"
-						class=" w-6 rounded-full"
+						src="/static/findex-logos/2025_Findex_Dex_logo-light.svg"
+						class=" w-60"
 						alt="logo"
 					/>
 				</div>
@@ -65,23 +65,7 @@
 		<div class="relative bg-transparent w-full min-h-screen flex z-10">
 			<div class="flex flex-col justify-end w-full items-center pb-10 text-center">
 				<div class="text-5xl lg:text-7xl font-secondary">
-					<Marquee
-						duration={5000}
-						words={[
-							$i18n.t('Explore the cosmos'),
-							$i18n.t('Unlock mysteries'),
-							$i18n.t('Chart new frontiers'),
-							$i18n.t('Dive into knowledge'),
-							$i18n.t('Discover wonders'),
-							$i18n.t('Ignite curiosity'),
-							$i18n.t('Forge new paths'),
-							$i18n.t('Unravel secrets'),
-							$i18n.t('Pioneer insights'),
-							$i18n.t('Embark on adventures')
-						]}
-					/>
-
-					<div class="mt-0.5">{$i18n.t(`wherever you are`)}</div>
+				    Ask Dex
 				</div>
 
 				<div class="flex justify-center mt-8">
