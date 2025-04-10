@@ -9,11 +9,6 @@ on:
     tags:
       - v*
 
-
-permissions:
-  id-token: write
-  contents: read
-
 env:
   REGISTRY: 533267335526.dkr.ecr.ap-southeast-2.amazonaws.com
   AWS_ROLE_ARN: arn:aws:iam::533267335526:role/fdx-ofn-innovation-hub-ci
@@ -22,6 +17,7 @@ jobs:
   build-main-image:
     runs-on: ${{ matrix.runner }}
     permissions:
+      id-token: write
       contents: read
       packages: write
     strategy:
@@ -127,6 +123,7 @@ jobs:
   build-cuda-image:
     runs-on: ${{ matrix.runner }}
     permissions:
+      id-token: write
       contents: read
       packages: write
     strategy:
@@ -235,6 +232,7 @@ jobs:
   build-cuda126-image:
     runs-on: ${{ matrix.runner }}
     permissions:
+      id-token: write
       contents: read
       packages: write
     strategy:
