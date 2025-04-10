@@ -16,6 +16,8 @@ env:
 jobs:
   build-main-image:
     runs-on: ${{ matrix.runner }}
+    env:
+      NODE_OPTIONS: "--max_old_space_size=4096"
     permissions:
       id-token: write
       contents: read
@@ -119,6 +121,8 @@ jobs:
 
   build-cuda-image:
     runs-on: ${{ matrix.runner }}
+    env:
+      NODE_OPTIONS: "--max_old_space_size=4096"
     permissions:
       id-token: write
       contents: read
@@ -329,6 +333,8 @@ jobs:
 
   build-ollama-image:
     runs-on: ${{ matrix.runner }}
+    env:
+      NODE_OPTIONS: "--max_old_space_size=4096"
     permissions:
       contents: read
       packages: write
