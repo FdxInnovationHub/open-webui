@@ -143,7 +143,7 @@ jobs:
       # although the repository owner has a lowercase username, this prevents some people from running actions after forking
       - name: Set repository and image name to lowercase
         run: |
-          echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
+          echo "IMAGE_NAME=${IMAGE_NAME,,}-cuda" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=${REGISTRY}/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
           IMAGE_NAME: '${{ github.repository }}'
@@ -619,7 +619,7 @@ jobs:
           echo "IMAGE_NAME=${IMAGE_NAME,,}" >>${GITHUB_ENV}
           echo "FULL_IMAGE_NAME=${REGISTRY}/${IMAGE_NAME,,}" >>${GITHUB_ENV}
         env:
-          IMAGE_NAME: '${{ github.repository }}'
+          IMAGE_NAME: '${{ github.repository }}-ollama'
 
       - name: Configure AWS Credentials
         uses: aws-actions/configure-aws-credentials@v4
