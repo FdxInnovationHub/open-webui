@@ -100,7 +100,7 @@ jobs:
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ steps.meta.outputs.tags }}
-          outputs: type=image,name=${{ env.FULL_IMAGE_NAME }},push-by-digest=true,name-canonical=true,push=true
+          outputs: type=image,name=${{ env.FULL_IMAGE_NAME }},push-by-digest=false,name-canonical=true,push=true
           #cache-from: type=registry,ref=${{ steps.cache-meta.outputs.tags }}
           #cache-to: type=registry,ref=${{ steps.cache-meta.outputs.tags }},mode=max
           build-args: |
@@ -209,7 +209,7 @@ jobs:
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ steps.meta.outputs.tags }}
-          outputs: type=image,name=${{ env.FULL_IMAGE_NAME }},push-by-digest=true,name-canonical=true,push=true
+          outputs: type=image,name=${{ env.FULL_IMAGE_NAME }},push-by-digest=false,name-canonical=true,push=true
           #cache-from: type=registry,ref=${{ steps.cache-meta.outputs.tags }}
           #cache-to: type=registry,ref=${{ steps.cache-meta.outputs.tags }},mode=max
           build-args: |
@@ -422,7 +422,7 @@ jobs:
           platforms: ${{ matrix.platform }}
           labels: ${{ steps.meta.outputs.labels }}
           tags: ${{ steps.meta.outputs.tags }}
-          outputs: type=image,name=${{ env.FULL_IMAGE_NAME }},push-by-digest=true,name-canonical=true,push=true
+          outputs: type=image,name=${{ env.FULL_IMAGE_NAME }},push-by-digest=false,name-canonical=true,push=true
           #cache-from: type=registry,ref=${{ steps.cache-meta.outputs.tags }}
           #cache-to: type=registry,ref=${{ steps.cache-meta.outputs.tags }},mode=max
           build-args: |
