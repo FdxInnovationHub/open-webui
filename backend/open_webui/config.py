@@ -959,31 +959,28 @@ except Exception as e:
 if default_prompt_suggestions == []:
     default_prompt_suggestions = [
         {
-            "title": ["Help me study", "vocabulary for a college entrance exam"],
-            "content": "Help me study vocabulary: write a sentence for me to fill in the blank, and I'll try to pick the correct option.",
+            "title": ["Help me explain", "tax concepts to a client"],
+            "content": "Help me explain this tax concept clearly to a client with limited financial literacy. Provide a relatable analogy and a simple example.",
         },
         {
-            "title": ["Give me ideas", "for what to do with my kids' art"],
-            "content": "What are 5 creative things I could do with my kids' art? I don't want to throw them away, but it's also so much clutter.",
+            "title": ["Give me ideas", "for a client appreciation campaign"],
+            "content": "What are 5 creative ideas we could use to thank and engage accounting or wealth clients in a client appreciation campaign?",
         },
         {
-            "title": ["Tell me a fun fact", "about the Roman Empire"],
-            "content": "Tell me a random fun fact about the Roman Empire",
+            "title": ["Tell me a fun fact", "about Australian tax history"],
+            "content": "Tell me a fun or surprising fact about the history of tax in Australia that I could use in a client newsletter or team trivia.",
         },
         {
-            "title": ["Show me a code snippet", "of a website's sticky header"],
-            "content": "Show me a code snippet of a website's sticky header in CSS and JavaScript.",
+            "title": ["Show me a sample message", "for a late document follow-up"],
+            "content": "Write a professional but friendly follow-up email reminding a client to submit their outstanding documents for their tax or wealth review.",
         },
         {
-            "title": [
-                "Explain options trading",
-                "if I'm familiar with buying and selling stocks",
-            ],
-            "content": "Explain options trading in simple terms if I'm familiar with buying and selling stocks.",
+            "title": ["Explain investment risk", "to a cautious client"],
+            "content": "Explain the concept of investment risk in simple terms to a cautious or risk-averse client. Use a metaphor or analogy if helpful.",
         },
         {
-            "title": ["Overcome procrastination", "give me tips"],
-            "content": "Could you start by asking me about instances when I procrastinate the most and then give me some suggestions to overcome it?",
+            "title": ["Help me prioritise tasks", "for an urgent corporate project"],
+            "content": "I'm working on a marketing or internal project with tight deadlines. Help me break it into key phases and identify what to prioritise.",
         },
     ]
 
