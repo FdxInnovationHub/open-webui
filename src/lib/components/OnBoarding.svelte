@@ -46,7 +46,7 @@
 					<img
 						id="logo"
 						crossorigin="anonymous"
-						src="/static/findex-logos/2025_Findex_Dex_logo-light.svg"
+						src="/static/findex-logos/2025_Findex_Dex_logo-dark.svg"
 						class=" w-60"
 						alt="logo"
 					/>
@@ -65,7 +65,6 @@
 		<div class="relative bg-transparent w-full min-h-screen flex z-10">
 			<div class="flex flex-col justify-end w-full items-center pb-10 text-center">
 				<div class="text-5xl lg:text-7xl font-secondary">
-				    Ask Dex
 				</div>
 
 				<div class="flex justify-center mt-8">
