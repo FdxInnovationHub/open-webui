@@ -13,7 +13,8 @@
 		showControls,
 		showSidebar,
 		temporaryChatEnabled,
-		user
+		user,
+		theme
 	} from '$lib/stores';
 
 	import { slide } from 'svelte/transition';
@@ -49,10 +50,18 @@
 
 <nav class="sticky top-0 z-30 w-full py-1 -mb-8 flex flex-col items-center drag-region">
 	<div class="flex items-center w-full pl-1.5 pr-1">
+	    <div classname="text-2xl font-bold">
+            <img src="/static/findex-logos/2025_Findex_Dex_logo-{$theme.includes('dark')
+                ? 'dark'
+                : $theme === 'system'
+                    ? window.matchMedia('(prefers-color-scheme: dark)').matches
+                        ? 'dark'
+                        : 'light'
+                    : 'light'}.svg" class="size-9 @sm:size-10 border-[1px] border-gray-100 dark:border-none pt-0.5 px-1">
+        </div>
 		<div
 			class=" bg-linear-to-b via-50% from-white via-white to-transparent dark:from-gray-900 dark:via-gray-900 dark:to-transparent pointer-events-none absolute inset-0 -bottom-7 z-[-1]"
 		></div>
-
 		<div class=" flex max-w-full w-full mx-auto px-1 pt-0.5 bg-transparent">
 			<div class="flex items-center w-full max-w-full">
 				<div

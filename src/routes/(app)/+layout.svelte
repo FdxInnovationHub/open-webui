@@ -276,13 +276,6 @@
 			{#if !['user', 'admin'].includes($user?.role)}
 				<AccountPending />
 			{:else if localDBChats.length > 0}
-                <header class="items-center justify-between text-white" style="background-color: #1a1e21; width: 120px">
-                    <div className="text-2xl font-bold" >
-                        <img src="/static/findex-logos/2025_Findex_Dex_logo-light-horizontal.svg" class="" />
-                    </div>
-                     <div class="flex flex-col py-4 space-y-2">
-                     </div>
-                </header>
 				<div class="fixed w-full h-full flex z-50">
 					<div
 						class="absolute w-full h-full backdrop-blur-md bg-white/20 dark:bg-gray-900/50 flex justify-center"
