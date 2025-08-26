@@ -42,7 +42,7 @@
 	export let id = '';
 	export let value = '';
 	export let placeholder = $i18n.t('Select a model');
-	export let searchEnabled = true;
+	export let searchEnabled = false;
 	export let searchPlaceholder = $i18n.t('Search a model');
 
 	export let items: {
