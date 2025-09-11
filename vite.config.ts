@@ -1,3 +1,4 @@
+import { sentrySvelteKit } from '@sentry/sveltekit';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
@@ -19,6 +20,12 @@ import { viteStaticCopy } from 'vite-plugin-static-copy';
 
 export default defineConfig({
 	plugins: [
+		sentrySvelteKit({
+			sourceMapsUploadOptions: {
+				org: 'findex',
+				project: 'ask-dex'
+			}
+		}),
 		sveltekit(),
 		viteStaticCopy({
 			targets: [

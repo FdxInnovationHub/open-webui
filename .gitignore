@@ -310,3 +310,5 @@ cypress/screenshots
 
 venv
 .idea
+# Sentry Config File
+.env.sentry-build-plugin
