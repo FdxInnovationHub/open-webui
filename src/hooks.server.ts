@@ -3,7 +3,8 @@ import { handleErrorWithSentry, sentryHandle } from '@sentry/sveltekit';
 import * as Sentry from '@sentry/sveltekit';
 
 Sentry.init({
-	dsn: 'https://747d172a76d64971c75d0dfd9bb5c529@o516902.ingest.us.sentry.io/4509986983968768'
+	dsn: import.meta.env.VITE_SENTRY_DSN,
+	denyUrls: [new RegExp("extensions/", "i"), new RegExp("^chrome://", "i")],
 
 	// uncomment the line below to enable Spotlight (https://spotlightjs.com)
 	// spotlight: import.meta.env.DEV,
